@@ -365,7 +365,7 @@
   {
    "cell_type": "code",
    "execution_count": 19,
-   "id": "1aabe1a4",
+   "id": "c7c3992a",
    "metadata": {},
    "outputs": [
     {
@@ -388,7 +388,7 @@
   {
    "cell_type": "code",
    "execution_count": 22,
-   "id": "4c004899",
+   "id": "7e838a81",
    "metadata": {},
    "outputs": [
     {
@@ -413,7 +413,7 @@
   {
    "cell_type": "code",
    "execution_count": 23,
-   "id": "991937e4",
+   "id": "8bce1b1f",
    "metadata": {},
    "outputs": [
     {
@@ -438,7 +438,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "d373a986",
+   "id": "5953bb8c",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -448,7 +448,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "2997f9aa",
+   "id": "06abf578",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -458,7 +458,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "f39d3aad",
+   "id": "c269f5df",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -468,7 +468,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "9c7eed20",
+   "id": "cecc3357",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -478,7 +478,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "d7c65cbf",
+   "id": "17f24113",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -488,7 +488,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "8aec02ef",
+   "id": "84b96f71",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -498,7 +498,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "f733dc37",
+   "id": "a964e1e6",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -508,7 +508,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "b00354d7",
+   "id": "62768f04",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -518,7 +518,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "894441bd",
+   "id": "4967f34e",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -526,7 +526,7 @@
   {
    "cell_type": "code",
    "execution_count": 25,
-   "id": "a19ebad5",
+   "id": "79fc53b1",
    "metadata": {},
    "outputs": [
     {
@@ -548,7 +548,7 @@
   {
    "cell_type": "code",
    "execution_count": 26,
-   "id": "6e1fc048",
+   "id": "8d62bd4b",
    "metadata": {},
    "outputs": [
     {
@@ -569,7 +569,7 @@
   {
    "cell_type": "code",
    "execution_count": 28,
-   "id": "06a49918",
+   "id": "a328e5fb",
    "metadata": {},
    "outputs": [
     {
@@ -590,7 +590,7 @@
   {
    "cell_type": "code",
    "execution_count": 29,
-   "id": "94597b7d",
+   "id": "396e9403",
    "metadata": {},
    "outputs": [
     {
@@ -611,7 +611,7 @@
   {
    "cell_type": "code",
    "execution_count": 32,
-   "id": "cb21cff4",
+   "id": "c41c6e80",
    "metadata": {},
    "outputs": [
     {
@@ -634,7 +634,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "b7b6f9b1",
+   "id": "4a033c24",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -646,7 +646,7 @@
   {
    "cell_type": "code",
    "execution_count": 33,
-   "id": "d44241af",
+   "id": "d0f887da",
    "metadata": {},
    "outputs": [
     {
@@ -669,7 +669,7 @@
   {
    "cell_type": "code",
    "execution_count": 34,
-   "id": "48caf29c",
+   "id": "120d873b",
    "metadata": {},
    "outputs": [
     {
@@ -693,7 +693,7 @@
   {
    "cell_type": "code",
    "execution_count": 39,
-   "id": "8fc7636c",
+   "id": "f5ff18d9",
    "metadata": {},
    "outputs": [
     {
@@ -717,7 +717,7 @@
   {
    "cell_type": "code",
    "execution_count": 41,
-   "id": "3c7c4fe1",
+   "id": "8df2f399",
    "metadata": {},
    "outputs": [
     {
@@ -738,7 +738,7 @@
   {
    "cell_type": "code",
    "execution_count": 42,
-   "id": "2680e378",
+   "id": "85f87265",
    "metadata": {},
    "outputs": [
     {
@@ -763,7 +763,7 @@
   {
    "cell_type": "code",
    "execution_count": 44,
-   "id": "528d65e2",
+   "id": "f7d79b6a",
    "metadata": {},
    "outputs": [
     {
@@ -785,7 +785,7 @@
   {
    "cell_type": "code",
    "execution_count": 45,
-   "id": "dfc42721",
+   "id": "eee5e9c2",
    "metadata": {},
    "outputs": [
     {
@@ -803,7 +803,7 @@
   {
    "cell_type": "code",
    "execution_count": 48,
-   "id": "34ce72fe",
+   "id": "70c15a81",
    "metadata": {},
    "outputs": [
     {
@@ -842,7 +842,7 @@
   {
    "cell_type": "code",
    "execution_count": 50,
-   "id": "c884b98b",
+   "id": "ec16f659",
    "metadata": {},
    "outputs": [
     {
@@ -862,7 +862,7 @@
   {
    "cell_type": "code",
    "execution_count": 51,
-   "id": "0d6f7be7",
+   "id": "9820f12c",
    "metadata": {},
    "outputs": [
     {
@@ -882,7 +882,7 @@
   {
    "cell_type": "code",
    "execution_count": 52,
-   "id": "2b666665",
+   "id": "f1a28309",
    "metadata": {},
    "outputs": [
     {
@@ -906,7 +906,7 @@
   {
    "cell_type": "code",
    "execution_count": 64,
-   "id": "befbcc68",
+   "id": "0de31473",
    "metadata": {},
    "outputs": [
     {
@@ -966,7 +966,7 @@
   {
    "cell_type": "code",
    "execution_count": 60,
-   "id": "fa6ced9d",
+   "id": "5910313e",
    "metadata": {},
    "outputs": [
     {
@@ -991,7 +991,7 @@
   {
    "cell_type": "code",
    "execution_count": 65,
-   "id": "6aad338f",
+   "id": "f26c1103",
    "metadata": {},
    "outputs": [
     {
@@ -1016,7 +1016,7 @@
   {
    "cell_type": "code",
    "execution_count": 66,
-   "id": "44161777",
+   "id": "7f526f95",
    "metadata": {},
    "outputs": [
     {
@@ -1041,7 +1041,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "22864a8c",
+   "id": "e7cd8eda",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1051,7 +1051,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "496993ab",
+   "id": "864329e6",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1062,7 +1062,7 @@
   {
    "cell_type": "code",
    "execution_count": 68,
-   "id": "6c4bebda",
+   "id": "d9336aec",
    "metadata": {},
    "outputs": [
     {
@@ -1086,7 +1086,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "69ac2168",
+   "id": "e7106cbf",
    "metadata": {},
    "source": [
     "## 1.2 기본 정보 조회"
@@ -1095,7 +1095,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "71d2ff5e",
+   "id": "98b97fbe",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1109,7 +1109,7 @@
   {
    "cell_type": "code",
    "execution_count": 69,
-   "id": "5fbfcc0c",
+   "id": "32cec691",
    "metadata": {},
    "outputs": [
     {
@@ -1131,7 +1131,7 @@
   {
    "cell_type": "code",
    "execution_count": 73,
-   "id": "5d3b2636",
+   "id": "4c4b7192",
    "metadata": {},
    "outputs": [
     {
@@ -1153,7 +1153,7 @@
   {
    "cell_type": "code",
    "execution_count": 71,
-   "id": "0d7f2e68",
+   "id": "3adb1627",
    "metadata": {},
    "outputs": [
     {
@@ -1175,7 +1175,7 @@
   {
    "cell_type": "code",
    "execution_count": 72,
-   "id": "d5b0c6a0",
+   "id": "1bc0a69e",
    "metadata": {},
    "outputs": [
     {
@@ -1198,7 +1198,7 @@
   {
    "cell_type": "code",
    "execution_count": 75,
-   "id": "7ac9e56b",
+   "id": "2e9387db",
    "metadata": {},
    "outputs": [
     {
@@ -1220,7 +1220,7 @@
   {
    "cell_type": "code",
    "execution_count": 74,
-   "id": "b348dd54",
+   "id": "5a1b07a0",
    "metadata": {},
    "outputs": [
     {
@@ -1240,7 +1240,7 @@
   {
    "cell_type": "code",
    "execution_count": 77,
-   "id": "138749eb",
+   "id": "16ba1bb9",
    "metadata": {},
    "outputs": [
     {
@@ -1262,7 +1262,7 @@
   {
    "cell_type": "code",
    "execution_count": 105,
-   "id": "48bcb7b7",
+   "id": "ba50eb63",
    "metadata": {},
    "outputs": [
     {
@@ -1289,7 +1289,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "4f5e405d",
+   "id": "b3176b3a",
    "metadata": {},
    "source": [
     "## 1.3 요소 추가\n",
@@ -1306,7 +1306,7 @@
   {
    "cell_type": "code",
    "execution_count": 83,
-   "id": "269265d5",
+   "id": "8b5cb62f",
    "metadata": {},
    "outputs": [
     {
@@ -1329,7 +1329,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "44c347c0",
+   "id": "16d2ae9f",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1339,7 +1339,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "8e94a315",
+   "id": "b8b754df",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1349,7 +1349,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "78f354fc",
+   "id": "68312337",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1359,7 +1359,7 @@
   {
    "cell_type": "code",
    "execution_count": 87,
-   "id": "a447b3c7",
+   "id": "ce775e01",
    "metadata": {},
    "outputs": [
     {
@@ -1378,7 +1378,7 @@
   {
    "cell_type": "code",
    "execution_count": 86,
-   "id": "c74f4d43",
+   "id": "73c7065a",
    "metadata": {},
    "outputs": [
     {
@@ -1399,7 +1399,7 @@
   {
    "cell_type": "code",
    "execution_count": 88,
-   "id": "a25a10a6",
+   "id": "f919b002",
    "metadata": {},
    "outputs": [
     {
@@ -1421,7 +1421,7 @@
   {
    "cell_type": "code",
    "execution_count": 91,
-   "id": "4cf2c59b",
+   "id": "439e4161",
    "metadata": {},
    "outputs": [
     {
@@ -1443,7 +1443,7 @@
   {
    "cell_type": "code",
    "execution_count": 92,
-   "id": "d3b60e6a",
+   "id": "2502207d",
    "metadata": {},
    "outputs": [
     {
@@ -1466,7 +1466,7 @@
   {
    "cell_type": "code",
    "execution_count": 93,
-   "id": "45236161",
+   "id": "8e8ab505",
    "metadata": {},
    "outputs": [
     {
@@ -1489,7 +1489,7 @@
   {
    "cell_type": "code",
    "execution_count": 94,
-   "id": "6083544c",
+   "id": "092d2e1c",
    "metadata": {},
    "outputs": [
     {
@@ -1511,7 +1511,7 @@
   {
    "cell_type": "code",
    "execution_count": 95,
-   "id": "226224a5",
+   "id": "25bffe5b",
    "metadata": {},
    "outputs": [
     {
@@ -1533,7 +1533,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "43f18150",
+   "id": "f8b92882",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1544,7 +1544,7 @@
   {
    "cell_type": "code",
    "execution_count": 98,
-   "id": "f8e74269",
+   "id": "7194ed60",
    "metadata": {},
    "outputs": [
     {
@@ -1566,7 +1566,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "918c8e8c",
+   "id": "9cbfa3c6",
    "metadata": {},
    "source": [
     "## 1.4 인덱싱과 요소 추가\n",
@@ -1580,7 +1580,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "53ab56ed",
+   "id": "96c343ef",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1590,7 +1590,7 @@
   {
    "cell_type": "code",
    "execution_count": 121,
-   "id": "35f98a1b",
+   "id": "bdc096b4",
    "metadata": {},
    "outputs": [
     {
@@ -1612,7 +1612,7 @@
   {
    "cell_type": "code",
    "execution_count": 100,
-   "id": "fe66207a",
+   "id": "7a2f1c37",
    "metadata": {},
    "outputs": [
     {
@@ -1634,7 +1634,7 @@
   {
    "cell_type": "code",
    "execution_count": 122,
-   "id": "f8594925",
+   "id": "c9edd712",
    "metadata": {},
    "outputs": [
     {
@@ -1656,7 +1656,7 @@
   {
    "cell_type": "code",
    "execution_count": 123,
-   "id": "b781b66c",
+   "id": "27aebae2",
    "metadata": {},
    "outputs": [
     {
@@ -1677,7 +1677,7 @@
   {
    "cell_type": "code",
    "execution_count": 124,
-   "id": "3b1152b4",
+   "id": "4e938118",
    "metadata": {},
    "outputs": [
     {
@@ -1697,7 +1697,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "f1f979ad",
+   "id": "f455364a",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1707,7 +1707,7 @@
   {
    "cell_type": "code",
    "execution_count": 125,
-   "id": "5ce31f3d",
+   "id": "ecbdefa9",
    "metadata": {},
    "outputs": [
     {
@@ -1729,7 +1729,7 @@
   {
    "cell_type": "code",
    "execution_count": 126,
-   "id": "6148d524",
+   "id": "edd04ada",
    "metadata": {},
    "outputs": [
     {
@@ -1750,7 +1750,7 @@
   {
    "cell_type": "code",
    "execution_count": 127,
-   "id": "016e128f",
+   "id": "c5a5b375",
    "metadata": {},
    "outputs": [
     {
@@ -1771,7 +1771,7 @@
   {
    "cell_type": "code",
    "execution_count": 128,
-   "id": "229450c8",
+   "id": "0894308f",
    "metadata": {},
    "outputs": [
     {
@@ -1792,7 +1792,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "29148338",
+   "id": "374f722f",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1803,7 +1803,7 @@
   {
    "cell_type": "code",
    "execution_count": 129,
-   "id": "2b83e985",
+   "id": "feae7110",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1818,7 +1818,7 @@
   {
    "cell_type": "code",
    "execution_count": 131,
-   "id": "ce1166bc",
+   "id": "05c002ac",
    "metadata": {},
    "outputs": [
     {
@@ -1839,7 +1839,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "01b5cf04",
+   "id": "4525bcf8",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1854,7 +1854,7 @@
   {
    "cell_type": "code",
    "execution_count": 132,
-   "id": "5029756d",
+   "id": "93a3d7df",
    "metadata": {},
    "outputs": [
     {
@@ -1875,7 +1875,7 @@
   {
    "cell_type": "code",
    "execution_count": 133,
-   "id": "a852de87",
+   "id": "9fa8034b",
    "metadata": {},
    "outputs": [
     {
@@ -1987,7 +1987,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "7a723144",
+   "id": "841cb70f",
    "metadata": {},
    "source": [
     "## 1.5 원하는 요소 추출\n",
@@ -2252,7 +2252,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "701c2b2f",
+   "id": "65a9891d",
    "metadata": {},
    "source": [
     "## 1.6. 요소 수정하기\n",
@@ -2347,7 +2347,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "158decd7",
+   "id": "9a9a0843",
    "metadata": {},
    "source": [
     "## 1.7 요소 삭제\n",
@@ -2417,7 +2417,7 @@
   {
    "cell_type": "code",
    "execution_count": 176,
-   "id": "d380ceea",
+   "id": "dad63504",
    "metadata": {},
    "outputs": [
     {
@@ -2438,7 +2438,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "a6fdc229",
+   "id": "5f09fc77",
    "metadata": {},
    "source": [
     "## 정렬하기"
@@ -2447,7 +2447,7 @@
   {
    "cell_type": "code",
    "execution_count": 178,
-   "id": "ece644b3",
+   "id": "a53a70a3",
    "metadata": {},
    "outputs": [
     {
@@ -2468,7 +2468,7 @@
   {
    "cell_type": "code",
    "execution_count": 179,
-   "id": "878a4421",
+   "id": "08c85931",
    "metadata": {},
    "outputs": [
     {
@@ -2490,7 +2490,7 @@
   {
    "cell_type": "code",
    "execution_count": 181,
-   "id": "feffcefc",
+   "id": "9b7245a1",
    "metadata": {},
    "outputs": [
     {
@@ -2512,7 +2512,7 @@
   {
    "cell_type": "code",
    "execution_count": 182,
-   "id": "bdc72c7e",
+   "id": "ed1c92cd",
    "metadata": {},
    "outputs": [
     {
@@ -2533,7 +2533,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "2dd96f0e",
+   "id": "b6d8065c",
    "metadata": {},
    "source": [
     "## 1.9 리스트 복제"
@@ -2542,7 +2542,7 @@
   {
    "cell_type": "code",
    "execution_count": 185,
-   "id": "d7ed56ec",
+   "id": "00472daf",
    "metadata": {},
    "outputs": [
     {
@@ -2567,7 +2567,7 @@
   {
    "cell_type": "code",
    "execution_count": 187,
-   "id": "bfc8e652",
+   "id": "d9f68cac",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2579,7 +2579,7 @@
   {
    "cell_type": "code",
    "execution_count": 189,
-   "id": "07ac3dd0",
+   "id": "99cb8bc2",
    "metadata": {},
    "outputs": [
     {
@@ -2602,7 +2602,7 @@
   {
    "cell_type": "code",
    "execution_count": 192,
-   "id": "37c4b077",
+   "id": "89886537",
    "metadata": {},
    "outputs": [
     {
@@ -2626,7 +2626,7 @@
   {
    "cell_type": "code",
    "execution_count": 194,
-   "id": "783e6744",
+   "id": "1f9f7b25",
    "metadata": {},
    "outputs": [
     {
@@ -2658,7 +2658,7 @@
   {
    "cell_type": "code",
    "execution_count": 195,
-   "id": "e088d76c",
+   "id": "b8bb1f0e",
    "metadata": {},
    "outputs": [
     {
@@ -2686,7 +2686,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "9752d6cc",
+   "id": "1492f3c8",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2698,7 +2698,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "8bd6f7e5",
+   "id": "0f77f99e",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2710,7 +2710,7 @@
   {
    "cell_type": "code",
    "execution_count": 197,
-   "id": "460a5956",
+   "id": "956b8396",
    "metadata": {},
    "outputs": [
     {
@@ -2730,7 +2730,7 @@
   {
    "cell_type": "code",
    "execution_count": 199,
-   "id": "57a9de91",
+   "id": "fec411e6",
    "metadata": {},
    "outputs": [
     {
@@ -2758,7 +2758,7 @@
   {
    "cell_type": "code",
    "execution_count": 210,
-   "id": "9ce01752",
+   "id": "54bf1052",
    "metadata": {},
    "outputs": [
     {
@@ -2780,7 +2780,7 @@
   },
   {
    "cell_type": "markdown",
-   "id": "44f57427",
+   "id": "19ff359f",
    "metadata": {},
    "source": [
     "## 2절 튜플\n",
@@ -2793,7 +2793,7 @@
   {
    "cell_type": "code",
    "execution_count": 212,
-   "id": "4d7b8fb1",
+   "id": "88968d3e",
    "metadata": {},
    "outputs": [
     {
@@ -2816,7 +2816,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "efe1c821",
+   "id": "9b5a02ac",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2826,7 +2826,7 @@
   {
    "cell_type": "code",
    "execution_count": 213,
-   "id": "9204b809",
+   "id": "240cb587",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2837,7 +2837,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "56a6db08",
+   "id": "7cc21fc7",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2848,7 +2848,7 @@
   {
    "cell_type": "code",
    "execution_count": 214,
-   "id": "081e3ac0",
+   "id": "973a662a",
    "metadata": {},
    "outputs": [
     {
@@ -2870,7 +2870,7 @@
   {
    "cell_type": "code",
    "execution_count": 217,
-   "id": "027323af",
+   "id": "e721cbfc",
    "metadata": {},
    "outputs": [
     {
@@ -2890,7 +2890,7 @@
   {
    "cell_type": "code",
    "execution_count": 218,
-   "id": "6f9005b1",
+   "id": "02a8b5c5",
    "metadata": {},
    "outputs": [
     {
@@ -2913,7 +2913,7 @@
   {
    "cell_type": "code",
    "execution_count": 221,
-   "id": "1ccea983",
+   "id": "5042d9b8",
    "metadata": {},
    "outputs": [
     {
@@ -2936,7 +2936,7 @@
   {
    "cell_type": "code",
    "execution_count": 220,
-   "id": "eb9aef26",
+   "id": "4c1d29d1",
    "metadata": {},
    "outputs": [
     {
@@ -2959,7 +2959,7 @@
   {
    "cell_type": "code",
    "execution_count": 226,
-   "id": "5138eb26",
+   "id": "0e5c2939",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -2970,7 +2970,7 @@
   {
    "cell_type": "code",
    "execution_count": 227,
-   "id": "33a6edf0",
+   "id": "24009fa9",
    "metadata": {},
    "outputs": [
     {
@@ -2991,7 +2991,7 @@
   {
    "cell_type": "code",
    "execution_count": 228,
-   "id": "ba03a9f8",
+   "id": "4b6142b9",
    "metadata": {},
    "outputs": [
     {
@@ -3012,7 +3012,7 @@
   {
    "cell_type": "code",
    "execution_count": 229,
-   "id": "e65ce344",
+   "id": "7b7cc520",
    "metadata": {},
    "outputs": [
     {
@@ -3033,7 +3033,7 @@
   {
    "cell_type": "code",
    "execution_count": 230,
-   "id": "f8d2bf5e",
+   "id": "c4e7b749",
    "metadata": {},
    "outputs": [
     {
@@ -3055,7 +3055,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "bd8e7c78",
+   "id": "c685ca8a",
    "metadata": {},
    "outputs": [],
    "source": [
@@ -3065,7 +3065,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "8a0b2a96",
+   "id": "8013e411",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3073,7 +3073,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "e5afbabe",
+   "id": "2d5d567c",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3081,7 +3081,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "d8be1873",
+   "id": "58a4f20c",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3089,7 +3089,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "3be1b5cc",
+   "id": "984f820e",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3097,7 +3097,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "b66f8e54",
+   "id": "c26fe04b",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3105,7 +3105,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "18baa0de",
+   "id": "a33c710c",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3113,7 +3113,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "cf776101",
+   "id": "008cc6f9",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3121,7 +3121,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "63ef28d4",
+   "id": "b3ea1509",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3129,7 +3129,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "bed5fa6e",
+   "id": "efed3137",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3137,7 +3137,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "1575d16d",
+   "id": "ca6198c7",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3145,7 +3145,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "3d646494",
+   "id": "c0f71e0f",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3153,7 +3153,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "e745ebb2",
+   "id": "c3896245",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3161,7 +3161,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "694de54c",
+   "id": "f38cf95a",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3169,7 +3169,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "3b4b6fca",
+   "id": "e48acbda",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3177,7 +3177,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "c7d0dc80",
+   "id": "ece7ec70",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3185,7 +3185,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "98d81261",
+   "id": "3aab77b0",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3193,7 +3193,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "6589f792",
+   "id": "53913a63",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3201,7 +3201,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "9748239d",
+   "id": "1c2ceb99",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3209,7 +3209,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "a278f5b1",
+   "id": "54ba8822",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3217,7 +3217,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "42db1d39",
+   "id": "0f422f21",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3225,7 +3225,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "ceb5627a",
+   "id": "e5358a38",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3233,7 +3233,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "d0809a3b",
+   "id": "c0a36e21",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3241,7 +3241,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "1065105f",
+   "id": "34d17a64",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3249,7 +3249,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "2b9c1ff9",
+   "id": "893299d0",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3257,7 +3257,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "b5a8fc65",
+   "id": "e39c5d32",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3265,7 +3265,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "af13ac94",
+   "id": "e48cb1dd",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3273,7 +3273,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "cc11207b",
+   "id": "c327af9b",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3281,7 +3281,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "77600291",
+   "id": "c3c76761",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3289,7 +3289,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "a7af1a71",
+   "id": "0755c955",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3297,7 +3297,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "279041a1",
+   "id": "023dd965",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3305,7 +3305,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "187e2f64",
+   "id": "f49052f1",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3313,7 +3313,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "db520101",
+   "id": "bd7594ea",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3321,7 +3321,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "5221c523",
+   "id": "ec595964",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3329,7 +3329,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "99518af2",
+   "id": "5ae91fec",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3337,7 +3337,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "d281b71d",
+   "id": "1d5181c4",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3345,7 +3345,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "6a92e26b",
+   "id": "15d081d5",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3353,7 +3353,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "97e34291",
+   "id": "dfa714a3",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3361,7 +3361,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "baed9f7f",
+   "id": "d625ea55",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3369,7 +3369,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "540bd4ff",
+   "id": "c99b3fb2",
    "metadata": {},
    "outputs": [],
    "source": []
@@ -3377,7 +3377,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "60b5b739",
+   "id": "11fd0853",
    "metadata": {},
    "outputs": [],
    "source": []
