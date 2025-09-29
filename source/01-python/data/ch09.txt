@@ -1,0 +1,3 @@
+Python is easy.
+Python is smart.
+프린트함수로 파일 쓰기 가능. -파일출력
