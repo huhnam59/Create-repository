@@ -17,3 +17,9 @@ np.random.rand(n): 균등분포의 1차원 난수 배열, 0부터 1미만의 균
 np.random.randn(n): 표준정규분포의 1차원 난수 배열(평균0, 표준편차1)
 np.arage(from, to, by, dtype)
 np.linspace((from, to, num):
+
+- 배열 차원 변경
+reshape():-1사용하면 자동계산
+resize(): -1불가
+T, transpose(): 전치행렬
+ravel(), flatten(): 1차원 변경

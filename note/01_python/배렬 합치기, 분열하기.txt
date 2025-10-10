@@ -1,0 +1,21 @@
+- 배열 합치기
+np.vstack
+np.hstack
+np.dstack
+
+np.column_stack(tup)
+row_stack(tup)
+stack(tup,axis)
+r_[a,b,c] row 단위축적
+c_[a,b,c] 컬럼 축적 합치기(1차원을 2차원으로)
+1차원 배뎔[:, np.newaxis}== 1차원 배열.reshpe(-1,10)=np.expand_dims(a, axis)
+  1차원 배열을 2차원 열백터로
+
+- 배열 분리하기
+vsplit(ary, indices_or_sections): 첫번째
+hsplit(ary, indices_or_sections): 두
+dsplit(ary, indices_or_sections)
+
+split(ary, indices_or_sections, axis=?)
+
+array_split(ary, indices_or_section, axis=?)
