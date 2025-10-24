@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table {
+            background-color: #00ffff; /*하늘색*/
+            margin: 20px 40px; /*밖여백 : 위, 오른쪽, 아래, 왼쪽*/
+        }
+
+        tr {
+            background-color: #FFFFFF; /*흰색*/
+        }
+
+            tr:hover {
+                background-color: pink; /*마우스 hover시 pink색으로 */
+            }
+
+        td {
+            padding: 5px 10px 5px 10px; /*안여백 : 위, 오른쪽, 아래, 왼쪽*/
+            text-align: center; /*글씨 가운데 정렬*/
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h3>3_표태그3.html:(customer list)</h3></caption>
+        <tr>
+            <th>ID</th>
+            <th>이름</th>
+            <th>전화</th>
+            <th>구매누적</th>
+            <th>레벨</th>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>홍길동</td>
+            <td>010-9999-9999</td>
+            <td>950,000</td>
+            <td>NORMAL</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>마길동</td>
+            <td>010-8888-9999</td>
+            <td>100,000</td>
+            <td>NORMAL</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>신길동</td>
+            <td>010-7777-7777</td>
+            <td>200,000</td>
+            <td>NORMAL</td>
+        </tr>
+        <tr>
+            <td colspan="5">이상 3명</td>
+        </tr>
+
+    </table>
+</body>
+</html>

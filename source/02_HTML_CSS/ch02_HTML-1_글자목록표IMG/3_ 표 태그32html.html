@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table {
+            background-color: #ff0000; /*빨강*/
+            margin: 20px 40px; /*밖여백 : 위, 오른쪽, 아래, 왼쪽*/
+        }
+
+        tr {
+            background-color: #ffd800; /*노랑*/
+        }
+
+            tr:hover {
+                background-color: pink; /*마우스 hover시 pink색으로 */
+            }
+
+        td {
+            padding: 5px 10px 5px 10px; /*안여백 : 위, 오른쪽, 아래, 왼쪽*/
+            text-align: center; /*글씨 가운데 정렬*/
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><h3>table ex1</h3></caption>
+        <tr>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <table>
+        <caption><h3>table ex2</h3></caption>
+        <tr>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td colspan="2">평균</td>
+            <td>80</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <caption><h3>table ex3</h3></caption>
+        <tr>
+            <th rowspan="4">중간고사성적</th>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+        </tr>
+
+
+        <tr>
+            <th>국어</th>
+            <th>영어</th>
+            <th>수학</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>60</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td colspan="2">평균</td>
+            <td>80</td>
+        </tr>
+    </table>
+</body>
+</html>
