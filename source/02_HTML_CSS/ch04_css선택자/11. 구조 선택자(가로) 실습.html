@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>가로 메뉴</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 메뉴 전체 박스 : 가로 중앙 정렬만, 고정 너비는 없앰 */
+        #nav {
+            margin: 10px auto;
+            /* 필요하면 최대 너비만 제한 */
+            /* max-width: 960px; */
+        }
+
+            /* ul을 플렉스 컨테이너로 → 자식 li를 한 줄에 배치 */
+            #nav ul {
+                display: flex; /* 가로 배치 */
+                list-style: none; /* 기본 블릿 제거 */
+            }
+
+                /* 각 메뉴 아이템 */
+                #nav ul li {
+                    flex: 1; /* 균등 너비(원하면 width:100px 등 고정값도 가능) */
+                    border: 1px solid gray;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 1.5em;
+                }
+
+                    /* 링크 스타일 */
+                    #nav ul li a {
+                        color: #000;
+                        text-decoration: none;
+                        font-weight: bold;
+                        display: block; /* 클릭 영역 넓히기 */
+                    }
+
+                    /* 홀수·짝수 배경색 */
+                    #nav ul li:nth-child(odd) {
+                        background: orange;
+                    }
+
+                    #nav ul li:nth-child(even) {
+                        background: yellow;
+                    }
+
+                    /* 첫/끝 메뉴 둥글기 */
+                    #nav ul li:first-child {
+                        border-radius: 20px 0 0 20px;
+                    }
+
+                    #nav ul li:last-child {
+                        border-radius: 0 20px 20px 0;
+                    }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <ul>
+            <li><a href="#1">menu1</a></li>
+            <li><a href="#2">menu2</a></li>
+            <li><a href="#3">menu3</a></li>
+            <li><a href="#4">menu4</a></li>
+            <li><a href="#5">menu5</a></li>
+            <li><a href="#6">menu6</a></li>
+            <li><a href="#7">menu7</a></li>
+            <li><a href="#8">menu8</a></li>
+            <li><a href="#9">menu9</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
