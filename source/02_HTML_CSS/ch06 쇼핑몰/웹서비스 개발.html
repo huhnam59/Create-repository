@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>여행 플랫폼 - 마이페이지</title>
+<style>
+/* ---------- RESET ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Malgun Gothic", sans-serif; background: #fafafa; }
+
+/* ---------- 전체 테두리 ---------- */
+.wrap {
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,.07);
+}
+
+/* ---------- HEADER ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  background: #ffffff;
+}
+header .logo {
+  background: #FDEADA;          /*  ← 새로운 색상  */
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+header nav {
+  display: flex;
+  gap: 18px;
+}
+header nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+header nav a:hover { text-decoration: underline; }
+
+/* ---------- CONTENT ---------- */
+#content {
+  overflow: hidden;          /* float clear */
+  padding: 20px;
+}
+
+/* ---------- LEFT NAV ---------- */
+#lnb {
+  float: left;
+  width: 180px;
+  margin-left: 15px;
+}
+#lnb ul { list-style: none; }
+#lnb ul li {
+  line-height: 36px;
+  padding: 0 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 4px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.92rem;
+}
+#lnb ul li:hover { background: #f7f7f7; }
+#lnb .active {
+  background: #FDEADA;        /*  ← 새로운 색상  */
+  border-color: #FDEADA;
+}
+
+/* ---------- RIGHT CARD ---------- */
+#my_content {
+  width: 750px;
+  border: 1px solid #ddd;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #fff;
+}
+#sub_title {
+  border-bottom: 1px solid gray;
+  height: 38px;
+  line-height: 38px;
+  font-size: 1rem;
+  padding-left: 16px;
+  background: #fafafa;
+}
+
+/* ---------- FORM (label 접근성) ---------- */
+#modify form {
+  width: 80%;
+  margin: 30px auto;
+}
+#modify .field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#modify .field label {
+  width: 110px;
+  font-weight: bold;
+}
+#modify .field input {
+  flex: 1;
+  height: 28px;
+  border: 1px solid #ccc;
+  padding: 0 8px;
+}
+#modify .actions {
+  text-align: center;
+  margin-top: 15px;
+}
+#modify .actions input[type="submit"] {
+  padding: 4px 18px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  clear: both;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background: #FDEADA;        /*  ← 새로운 색상  */
+  font-size: 0.85rem;
+  color: #666;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="logo">LOGO</div>
+    <nav>
+      <a href="#">참여하기</a>
+      <a href="#">개설하기</a>
+      <a href="#">검색하기</a>
+      <a href="#">홍길동님</a>
+      <a href="#">로그아웃</a>
+      <a href="#">고객센터</a>
+    </nav>
+  </header>
+
+  <!-- ========== CONTENT ========== -->
+  <div id="content">
+    <!-- 왼쪽 내비 -->
+    <div id="lnb">
+      <ul>
+        <li>나의 여행</li>
+        <li>참여 여행</li>
+        <li>관심 여행</li>
+        <li class="active">개인정보변경</li>
+        <li>비밀번호 변경</li>
+      </ul>
+    </div>
+
+    <!-- 중앙 카드 -->
+    <div id="my_content">
+      <div id="sub_title">개인정보 변경</div>
+
+      <div id="modify">
+        <form>
+          <div class="field">
+            <label for="name">이름</label>
+            <input id="name" type="text" placeholder="홍길동">
+          </div>
+          <div class="field">
+            <label for="uid">아이디</label>
+            <input id="uid" type="text" placeholder="hong123">
+          </div>
+          <div class="field">
+            <label for="email">이메일</label>
+            <input id="email" type="email" placeholder="hong@example.com">
+          </div>
+          <div class="field">
+            <label for="tel">전화</label>
+            <input id="tel" type="tel" placeholder="010-1234-5678">
+          </div>
+          <div class="field">
+            <label for="birth">생년월일</label>
+            <input id="birth" type="date">
+          </div>
+          <div class="field">
+            <label for="addr">주소</label>
+            <input id="addr" type="text" placeholder="서울특별시 강남구">
+          </div>
+          <div class="actions">
+            <input type="submit" value="저장">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    &copy; 2025 여행 플랫폼
+  </footer>
+</div>
+</body>
+</html>

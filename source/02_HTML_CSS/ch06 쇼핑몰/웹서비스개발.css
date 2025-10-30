@@ -1,0 +1,87 @@
+/* ==========================================
+   RESET  (optional but recommended)
+   ========================================== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ==========================================
+   ROOT LAYOUT  (tree from the images)
+   ========================================== */
+/* ---------- 1.  top bar  ---------- */
+nav {
+  display: flex;
+  justify-content: space-between;   /* nav_left | nav_right */
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ---------- 2.  main wrapper  ---------- */
+#content {
+  overflow: hidden;          /* clear floats */
+  padding: 20px;
+}
+
+/* ---------- 3.  title strip  ---------- */
+#title {
+  border-bottom: 1px solid gray;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* ---------- 4.  left nav bar  ---------- */
+#lnb {
+  float: left;
+  width: 180px;
+  margin-left: 15px;
+}
+#lnb ul li {
+  line-height: 30px;
+  padding: 2px 30px;
+  border: 1px solid gray;
+  font-size: 0.9em;
+  list-style: none;
+}
+
+/* ---------- 5.  right card (my_content)  ---------- */
+#my_content {
+  width: 750px;
+  border: 1px solid gray;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* ---------- 6.  sub-title inside the card  ---------- */
+#sub_title {
+  border-bottom: 1px solid gray;
+  height: 30px;
+  line-height: 30px;
+  font-size: 0.9em;
+  padding-left: 10px;
+}
+
+/* ---------- 7.  form wrapper  ---------- */
+#modify table {
+  width: 70%;
+  margin: 30px auto;
+}
+#modify table td {
+  padding: 3px;
+}
+#modify input[type='text'],
+#modify input[type='email'] {
+  width: 90%;
+  height: 25px;
+  border: 1px solid gray;
+}
+#modify input[type='submit'] {
+  padding: 2px 10px;
+}
+
+/* ---------- 8.  footer  ---------- */
+footer {
+  clear: both;               /* sit below floated columns */
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
