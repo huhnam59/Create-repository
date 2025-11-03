@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>QUIZ – 점수 누적</title>
+  <style>
+    body { font: 20px/1.5 "맑은 고딕"; text-align: center; margin-top: 50px; }
+  </style>
+  <script>
+    let cnt   = 0;   // 입력 횟수
+    let right = 0;   // 올바른 점수(0~100) 개수
+    let wrong = 0;   // 잘못된 입력 개수
+    let sum   = 0;   // 올바른 점수 합계
+
+    /* 누적할래? confirm 창에서 취소 누를 때까지 반복 */
+    while (confirm('누적할래?')) {
+      const input = prompt('0~100 사이 점수를 입력하세요');
+      cnt++;                       // 1. 입력 횟수 증가
+      const score = Number(input); // 2. 형 변환
+
+      // 3. NaN 또는 범위 밖 → wrong 증가
+      if (isNaN(score) || score < 0 || score > 100) {
+        wrong++;
+      } else {                     // 3-2. 올바른 점수 → right, sum 누적
+        right++;
+        sum += score;
+      }
+    }
+
+    /* 반복 종료 후 결과 출력 */
+    document.write(`<h2>총 입력 횟수 : ${cnt}</h2>`);
+    document.write(`<h2>올바른 점수 개수 : ${right}</h2>`);
+    document.write(`<h2>잘못된 입력 개수 : ${wrong}</h2>`);
+    document.write(`<h2>올바른 점수 합계 : ${sum}</h2>`);
+  </script>
+</head>
+<body>
+</body>
+</html>

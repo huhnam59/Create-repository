@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>두 수 비교</title>
+  <style>
+    p { text-align:center; }
+  </style>
+  <script>
+    function chk(){
+      const su1 = frm.su1.value.trim();
+      const su2 = frm.su2.value.trim();
+
+      if(!su1){ alert('첫번째 수를 입력하세요'); frm.su1.focus(); return false; }
+      if(!su2){ alert('두번째 수를 입력하세요'); frm.su2.focus(); return false; }
+
+      const n1 = Number(su1);
+      const n2 = Number(su2);
+      let diff = Math.abs(n1 - n2);
+      let msg;
+
+      if(n1 > n2)      msg = `첫번째 수가 ${diff}만큼 더 크다`;
+      else if(n2 > n1) msg = `두번째 수가 ${diff}만큼 더 크다`;
+      else             msg = '두 수는 같다';
+
+      /* 화면에 추가 */
+      document.body.insertAdjacentHTML('beforeend', `<p>${msg}</p>`);
+      /* 팝업도 함께 */
+      alert(msg);
+
+      return false;   // 새로고침 방지
+    }
+  </script>
+</head>
+<body>
+  <form name="frm" onsubmit="return chk()">
+    <fieldset>
+      <p>첫번째 수 : <input type="number" name="su1"></p>
+      <p>두번째 수 : <input type="number" name="su2"></p>
+      <p><input type="submit" value="결과"></p>
+    </fieldset>
+  </form>
+</body>
+</html>
