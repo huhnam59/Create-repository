@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10초 배경 바꾸기</title>
+  <style>
+    html,body{margin:0;height:100%;background-size:cover;background-repeat:no-repeat;
+              display:flex;align-items:center;justify-content:center;font-size:3rem;
+              font-family:sans-serif;text-shadow:2px 2px 4px rgba(0,0,0,.6);}
+  </style>
+</head>
+<body>
+  <div id="msg"></div>
+
+  <script>
+    /* ---------- 3개 이미지 Base64 (업로드된 PNG 그대로) ---------- */
+    const img01 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='; // img01.png
+    const img02 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='; // img02.png
+    const img03 = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='; // img03.png
+
+    const img = [
+      `url(${img01})`,
+      `url(${img02})`,
+      `url(${img03})`
+    ];
+    const color = ['yellow', 'blue', 'white'];   /* 글자색 */
+
+    let sec = 0;
+    const msg = document.getElementById('msg');
+
+    function changeBg(){
+      const idx = sec % 3;
+      document.body.style.backgroundImage = img[idx];
+      msg.style.color = color[idx];
+      msg.textContent = `${sec+1}초 경과 | ${new Date().toLocaleTimeString()}`;
+    }
+
+    /* 초기 표시 */
+    changeBg(); sec++;
+
+    /* 1초마다 변경, 10초 후 종료 */
+    const timer = setInterval(() => {
+      if(sec >= 10){ clearInterval(timer); msg.textContent = '10초 완료!'; return; }
+      changeBg(); sec++;
+    }, 1000);
+  </script>
+</body>
+</html>

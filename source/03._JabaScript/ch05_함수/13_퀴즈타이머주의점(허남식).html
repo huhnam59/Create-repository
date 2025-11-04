@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz 완성 - 10초 배경 바꾸기</title>
+
+  <!-- 기본 레이아웃 -->
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      font-family: sans-serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, .6);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="msg">0초 경과</div>
+
+  <script>
+    /* ---------- 3개 이미지 경로 ---------- */
+    const imgArr = [
+      'url(ch05_img/img01.png)',
+      'url(ch05_img/img02.png)',
+      'url(ch05_img/img03.png)'
+    ];
+
+    /* ---------- 글자색 ---------- */
+    const colorArr = ['yellow', 'blue', 'white'];
+
+    let sec = 0;                                    // 경과 초
+    const msg = document.getElementById('msg');     // 화면에 출력할 요소
+
+    /* 1초마다 실행 */
+    const timer = setInterval(() => {
+      const idx = sec % 3;                          // 0,1,2 반복
+      document.body.style.backgroundImage = imgArr[idx];
+      msg.style.color = colorArr[idx];
+      msg.textContent = `${sec + 1}초 경과 | ${new Date().toLocaleTimeString()}`;
+
+      sec++;
+      if (sec >= 10) {                              // 10초 후 종료
+        clearInterval(timer);
+        msg.textContent = '10초 완료!';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
