@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="go">
+<head>
+  <meta charset="utf-8" />
+  <title>회원가입 폼</title>
+  <style>
+    table {width:350px; margin:20px auto; padding:20px 10px;}
+    table, input[type='text'], input[type='password'] {
+        border: 1px solid #385d81;
+outline: 1px solid #385d81;
+        padding: 2px;
+    }
+    input[type='submit'], input[type='reset'], input[type='button'], button{
+        background-color: #385d81;
+        border:0; outline:0;
+        color:white; 
+        border-radius: 3px;
+        padding:10px 20px;
+        margin:5px;
+    }
+    td, th { padding:5px 10px; text-align:center;}
+  </style>
+  <script>
+    /* ========== 유효성 검사 함수 ========== */
+  function joinCheck(){
+    var f = document.frm;
+
+    /* 1. 이름: 특수문자·숫자 금지 */
+    if(!/^[가-힣a-zA-Z]+$/.test(f.name.value)){
+      alert('이름은 한글/영문만 입력하세요.');
+      f.name.focus();
+      return false;
+    }
+
+    /* 2. 메일: 올바른 형식 */
+    if(!/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i.test(f.mail.value)){
+      alert('올바른 메일 형식이 아닙니다.');
+      f.mail.focus();
+      return false;
+    }
+
+    /* 3. 비밀번호: 4글자 이상, 알파벳+숫자+특수문자 혼합 */
+    if(!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[\W_]).{4,}$/.test(f.pw.value)){
+      alert('비밀번호는 4글자 이상, 알파벳·숫자·특수문자를 모두 포함해야 합니다.');
+      f.pw.focus();
+      return false;
+    }
+
+    /* 4. 비밀번호 확인: 두 값 일치 */
+    if(f.pw.value !== f.pwChk.value){
+      alert('비밀번호가 일치하지 않습니다.');
+      f.pwChk.focus();
+      return false;
+    }
+
+    /* 모든 조건 만족 시 폼 전송 */
+    alert('회원가입이 완료되었습니다!');
+    return true;   // 실제 전송은 action="#" 이므로 페이지가 새로고침됩니다.
+  } 
+  </script>
+</head>
+<body>
+  <form action="#" name="frm" onsubmit="return joinCheck()">
+    <table>
+      <tr>
+        <th>이름</th>
+        <td>
+          <input type="text" name="name" placeholder="특수문자와 숫자 못 와" 
+                        autofocus="autofocus"/>
+        </td>
+      </tr>
+      <tr>
+        <th>메일</th>
+        <td><input type="text" name="mail" placeholder="메일 형식에 맞추세요" /></td>
+      </tr>
+      <tr>
+        <th>비밀번호</th>
+        <td><input type="password" name="pw" placeholder="특수문자,알파벳,숫자 포함" /></td>
+      </tr>
+      <tr>
+        <th>비밀번호 확인</th>
+        <td><input type="password" name="pwChk" /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="회원가입" />
+          <input type="reset" value="취소" />
+          <input type="button" value="로그인" />
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
+
