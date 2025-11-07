@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이미지 롤오버 효과</title>
+  <style>
+    ul { overflow: hidden; }
+    li { float: left; list-style: none; margin: 3px; }
+  </style>
+  <script>
+    // 이미지 경로 배열 (경로 수정 및 공백 제거)
+    var overImg = ['ch11_img/0over.jpg', 'ch11_img/1over.jpg', 'ch11_img/2over.jpg', 'ch11_img/3over.jpg'];
+    var outImg = ['ch11_img/0out.jpg', 'ch11_img/1out.jpg', 'ch11_img/2out.jpg', 'ch11_img/3out.jpg'];
+    
+    // 마우스 올렸을 때 호출되는 함수
+    function changeOver(obj, index) {
+      obj.src = overImg[index];
+    }
+    
+    // 마우스 내렸을 때 호출되는 함수
+    function changeOut(obj, index) {
+      obj.src = outImg[index];
+    }
+  </script>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="#">
+        <img src="ch11_img/0out.jpg" alt="Tutorial" onmouseover="changeOver(this, 0)" onmouseout="changeOut(this, 0)">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="ch11_img/1out.jpg" alt="Example" onmouseover="changeOver(this, 1)" onmouseout="changeOut(this, 1)">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="ch11_img/2out.jpg" alt="Special" onmouseover="changeOver(this, 2)" onmouseout="changeOut(this, 2)">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="ch11_img/3out.jpg" alt="Link" onmouseover="changeOver(this, 3)" onmouseout="changeOut(this, 3)">
+      </a>
+    </li>
+  </ul>
+</body>
+</html>

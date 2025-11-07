@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이미지 롤오버 및 다운 효과</title>
+  <style>
+    ul { overflow: hidden; }
+    li { float: left; list-style: none; margin: 3px; }
+    .mouse-section { margin-top: 30px; clear: both; }
+    .mouse-section img { margin-right: 10px; border: 0; }
+  </style>
+  <script>
+    // Quiz1: 롤오버 이미지 경로 배열 (경로명 통일 및 공백 제거)
+    var overImg = ['ch11_img/0over.jpg', 'ch11_img/1over.jpg', 'ch11_img/2over.jpg', 'ch11_img/3over.jpg'];
+    var outImg = ['ch11_img/0out.jpg', 'ch11_img/1out.jpg', 'ch11_img/2out.jpg', 'ch11_img/3out.jpg'];
+    
+    // Quiz2: 마우스 다운/업 이미지 경로
+    var butDownImg = 'ch11_img/but2.gif';  // 마우스 다운 시
+    var butUpImg = 'ch11_img/but1.gif';    // 마우스 업 시
+    
+    // Quiz1: 마우스 올렸을 때
+    function changeOver(obj, index) {
+      obj.src = overImg[index];
+    }
+    
+    // Quiz1: 마우스 내렸을 때
+    function changeOut(obj, index) {
+      obj.src = outImg[index];
+    }
+    
+    // Quiz2: 마우스 다운 되었을 때
+    function changeDown(obj) {
+      obj.src = butDownImg;
+    }
+    
+    // Quiz2: 마우스 업 되었을 때
+    function changeUp(obj) {
+      obj.src = butUpImg;
+    }
+  </script>
+</head>
+<body>
+  <!-- Quiz1: 상단 네비게이션 버튼 (롤오버 효과) -->
+  <ul>
+    <li>
+      <a href="#">
+        <img src="ch11_img/0out.jpg" alt="Tutorial" onmouseover="changeOver(this, 0)" onmouseout="changeOut(this, 0)">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="ch11_img/1out.jpg" alt="Example" onmouseover="changeOver(this, 1)" onmouseout="changeOut(this, 1)">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="ch11_img/2out.jpg" alt="Special" onmouseover="changeOver(this, 2)" onmouseout="changeOut(this, 2)">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="ch11_img/3out.jpg" alt="Link" onmouseover="changeOver(this, 3)" onmouseout="changeOut(this, 3)">
+      </a>
+    </li>
+  </ul>
+  
+  <!-- Quiz2: 하단 마우스 다운/업 버튼 -->
+  <div class="mouse-section">
+    <img src="ch11_img/but1.gif" alt="mouse up" onmousedown="changeDown(this)" onmouseup="changeUp(this)" />
+    <img src="ch11_img/but2.gif" alt="mouse down" />
+  </div>
+</body>
+</html>
