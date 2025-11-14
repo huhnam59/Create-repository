@@ -76,88 +76,63 @@ SELECT DISTINCT DEPTNO JOB FROM EMP;
     SELECT * FROM EMP WHERE SAL>=1500 AND SAL<=3000;
     SELECT * FROM EMP WHERE SAL BETWEEN 1500 AND 3000;
     SELECT * FROM EMP WHERE SAL BETWEEN 3000 AND 1500; -- X
+    -- ex-1. SAL이 1500미만 3000초과(ex1의 반대)
+    SELECT * FROM EMO WHERE SAL NOT  BETWEEN  1500 AND 3000;
+    SELECT * FROM EMO WHERE SAL <1500 OR SAL>3000;
+    -- ex2. 82년도 봄(3월~5월)에 입사한 직원의 모든 필드
+    SELEDCT * FROM EMP
+        WHERE TO_CHAR(HIREDATE, 'RR/MM/DD') BETWEEN '81/03/01' AND '81/05/31'
+    --(2) 필드명 IN(값1, 값2, ..값N)
+    -- 부서코드가 10번이거나 30번이거ㅓ나 40번 사람의 모든 정보
+    SELECT * FROM EMP WHERE DEPTNO=10 OR DEPTNO=30 OR DEPTNO=40;
+    SELECT * FROM EMP WHERE DEPTNO IN (10, 30, 40);
+    --ex2. 직책(JOB)이 'MANAGER'이거나 'ANALYST'인 사원의  모든 정보
+    SELET * FROM EMP WHERE JOB  IN ('MANAGER', 'ANALUST');
+    --ex1-1. ex1의 반대(부서번호가 10번도 아니고 30도 아니고 40도 아닌 사람)
+    SELECT * FROM EMP WHERE DEPTNO NOT IN(10, 30, 40);
     
-     
- # 연습문제 풀기
- 	연습문제 꼭 풀기
---1. emp 테이블의 구조 출력
-DESC EMP
---2. emp 테이블의 모든 내용을 출력 
-SELECT EMPNO, ENAME,SAL, JOB FROM EMP;
---3. 현 scott 계정에서 사용가능한 테이블 출력
+-- (3) 필드명 LIKE '패턴': %(0글자이상), _(한글자)를 포함하는 패턴
+     -- ex. 이름이 M으로 시작하는 사원의 모든 정보
+    SELECT * FROM EMP WHERE ENAME LIKE 'M%';
+    -- ex. 이름이 S로 끝나는 사원의 모든 정보
+    SELECT * FROM EMP WHERE ENAME LIKE '%S';
+    -- ex. 이름에 N이 들어가는 사원의 모든 정보
+    SELECT * FROM EMP WHERE ENAME LIKE '%N%';
+    -- ex. 이름에 N이 들어가고 JOB에 S가 들어가는 사원
+    SELECT * FROM EMP WHERE ENAME LIKE '%N%' AND JOB LIKE '%S%';
+    -- ex. SAL이 5로 끝나는 사원 
+    SELECT * FROM EMP WHERE SAL LIKE '%5';S
+   
+   --ex. 82년도에 입사한 사원
+   SELECT * FROM EMP WHERE TO_CHAR(HIREDATE, 'RR/MM/DD') LIKE '82/%';
+   SELECT * FROM EMP WHERE TO_CHAR(HIREDATE, 'RR')=82;
+   
+   --ex. 1월에 입사한 사원
+   SELECT * FROM EMP WHERE TO_CHAR(HIREDATE, 'RR/MM/DD') LIKE '_/01/_';
+   SELECT * FROM EMP WHERE TO_CHAR(HIREDATE, 'MM')='01';
+   --ex. 이름에 %가 들어간 사원
+   SELECT * FROM EMP WHERE ENAME LIKE '%%%';
+   DESC EMP;
+       -- 이름에 %가 들어간 데이터 INSERT 
+       INSERT INTO EMP VALUES (9999,'홍%동', NULL, NULL, NULL,9000, 9000,40);
+       
+       SELECT * FROM EMP;
+       ROLLBACK;  --DML(데이터조작어: 추가, 수정, 삭제, 검색)를 취소
+  -- (4) 필드명 IS NULL: 필드명이 NULL인지니를 검색할 때
+    -- ex.  COMM(상여)이 없는 사원
+    SELECT * FROM EMP WHERE COMM IS NULL OR COMM=0;
+    -- ex. COMM(상여)를 받는 사원(COMM!=0 AND COMM이 NULL이 아님)
+    SELECT * FROM EMP WHERE COMM IS NOT NULL AND COMM!=0;
+--9. 정렬(오름차순, 내림차순): ORDER BY 절
+SELECT * FROM EMP ORDER BY SAL; --오름차순
+SELECT * FROM EMP ORDER BY SAL DESC; -- 내림차순
+     -- ex. 급여 내림차순, 급여같으면 입사일 내림차순
+     SELECT * FROM EMP ORDER BY SAL DESC, HIREDATE DESC;
+     --ex, 급여가 2000초과하는 사원을 출력, 이름 abc순(오름차순)
+     SELECT * FROM EMP WHERE SAL>2000 ORDER BY ENAME DESC;
 
---4. emp 테이블에서 사번, 이름, 급여, 업무, 입사일 출력
-SELECT EMPNO AS "사 번", ENMME AS "이 름", SAL AS "급여", JOB AS "업무", RR/MM/DD AS "입사일"
-      FROM EMP;
---5. emp 테이블에서 급여가 2000미만인 사람의 사번, 이름, 급여 출력
-SELECT * FROM EMP WHERE SAL<2000;
---6. 입사일이 81/02이후에 입사한 사람의 사번, 이름, 업무, 입사일 출력
-SELECT EMPNO AS "사 번", ENMME AS "이 름", SAL AS "급여", JOB AS "업무", RR/MM/DD AS "입사일", WHERE TO_CHAR(HIREDATE, 'RR/MM/DD') >='1981/02/01'  
-      FROM EMP;
---7. 업무가 SALESMAN인 사람들 모든 자료 출력
-
---8. 업무가 CLERK이 아닌 사람들 모든 자료 출력
-
---9. 급여가 1500이상이고 3000이하인 사람의 사번, 이름, 급여 출력
-
---10. 부서코드가 10번이거나 30인 사람의 사번, 이름, 업무, 부서코드 출력
-
---11. 업무가 SALESMAN이거나 급여가 3000이상인 사람의 사번, 이름, 업무, 부서코드 출력
-
---12. 급여가 2500이상이고 업무가 MANAGER인 사람의 사번, 이름, 업무, 급여 출력
-
-
-
-
-
-
-
-
-
-
--- 연습문제 꼭 풀기
---1. emp 테이블의 구조 출력
-DESC EMP;
-
---2. emp 테이블의 모든 내용을 출력 
-SELECT * FROM EMP;
-
---3. 현 scott 계정에서 사용가능한 테이블 출력
-SELECT * FROM TAB;
-
---4. emp 테이블에서 사번, 이름, 급여, 업무, 입사일 출력
-SELECT EMPNO, ENAME, SAL, JOB, HIREDATE FROM EMP;
-
---5. emp 테이블에서 급여가 2000미만인 사람의 사번, 이름, 급여 출력
-SELECT EMPNO, ENAME, SAL FROM EMP WHERE SAL<2000;
-
---6. 입사일이 81/02이후에 입사한 사람의 사번, 이름, 업무, 입사일 출력
-SELECT EMPNO, ENAME, JOB, HIREDATE FROM EMP 
-    WHERE HIREDATE >= '81/02/01';
-SELECT EMPNO, ENAME, JOB, HIREDATE FROM EMP 
-    WHERE TO_CHAR(HIREDATE, 'RR/MM') >= '81/02';
-SELECT EMPNO, ENAME, JOB, HIREDATE FROM EMP 
-    WHERE HIREDATE >= TO_DATE('81/02/01', 'RR/MM/DD');
     
---7. 업무가 SALESMAN인 사람들 모든 자료 출력
-SELECT * FROM EMP WHERE JOB = 'SALESMAN';
-
---8. 업무가 CLERK이 아닌 사람들 모든 자료 출력
-SELECT * FROM EMP WHERE JOB <> 'CLERK';
-
---9. 급여가 1500이상이고 3000이하인 사람의 사번, 이름, 급여 출력
-SELECT EMPNO, ENAME, SAL FROM EMP WHERE SAL>=1500 AND SAL<=3000;
-
---10. 부서코드가 10번이거나 30인 사람의 사번, 이름, 업무, 부서코드 출력
-SELECT EMPNO, ENAME, JOB, DEPTNO FROM EMP WHERE DEPTNO=10 OR DEPTNO=30;
-
---11. 업무가 SALESMAN이거나 급여가 3000이상인 사람의 사번, 이름, 업무, 부서코드 출력
-SELECT EMPNO, ENAME, JOB, DEPTNO FROM EMP WHERE JOB='SALESMAN' OR SAL>=3000;
-
---12. 급여가 2500이상이고 업무가 MANAGER인 사람의 사번, 이름, 업무, 급여 출력
-SELECT EMPNO, ENAME, JOB, SAL FROM EMP WHERE SAL>=2500 AND JOB='MANAGER';
-
---13.“ename은 XXX 업무이고 연봉은 XX다” 스타일로 모두 출력(연봉은 SAL*12+COMM)
-SELECT ENAME || '은 ' || JOB || '업무이고 연봉은 '|| 
-        (SAL*12+NVL(COMM, 0)) || '다' MSG
-    FROM EMP;
+    
+    
+    
+    
