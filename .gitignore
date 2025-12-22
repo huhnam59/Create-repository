@@ -3,3 +3,5 @@
 downloads/
 IDE/
 lecNote/
+.venv/
+.idea/
