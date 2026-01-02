@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 병오년 새해 축하 다이어리</title>
+    <style>
+        :root {
+            --primary-red: #c62828;
+            --gold: #d4af37;
+            --paper: #fffcf5;
+        }
+
+        body {
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            margin: 0;
+            font-family: 'Malgun Gothic', sans-serif;
+        }
+
+        /* 다이어리 전체 레이아웃 */
+        .diary-page {
+            width: 95%;
+            max-width: 600px;
+            background: var(--paper);
+            border-left: 15px solid var(--primary-red);
+            border-radius: 5px 20px 20px 5px;
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 헤더 메시지 영역 */
+        .header {
+            background-color: var(--primary-red);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        .header h1 { margin: 0; font-size: 1.8rem; letter-spacing: 3px; }
+        .header p { margin: 10px 0 0; font-size: 1rem; color: var(--gold); font-weight: bold; }
+
+        /* 영상 섹션 */
+        .video-container {
+            width: 100%;
+            background: #000;
+            line-height: 0;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            max-height: 60vh; /* 스마트폰 세로 길이에 맞춰 조정 */
+        }
+
+        /* 메인 사진 & 애니메이션 섹션 */
+        .photo-section {
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(to bottom, #fffcf5, #f0ede5);
+        }
+
+        .main-photo {
+            width: 80%;
+            max-width: 300px;
+            border: 5px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 도약하는 말 애니메이션 (아이콘) */
+        .horse-anim {
+            position: absolute;
+            font-size: 2.5rem;
+            z-index: 1;
+            animation: jump 3s infinite ease-in-out;
+            opacity: 0.6;
+        }
+
+        @keyframes jump {
+            0% { transform: translateY(0) scale(1); opacity: 0; }
+            50% { transform: translateY(-100px) scale(1.2); opacity: 0.8; }
+            100% { transform: translateY(-150px) scale(1.5); opacity: 0; }
+        }
+
+        /* 방명록 섹션 */
+        .guestbook {
+            padding: 20px;
+            background: white;
+            border-top: 2px dashed var(--primary-red);
+        }
+
+        .guestbook h3 { color: var(--primary-red); margin-top: 0; border-bottom: 2px solid var(--gold); display: inline-block; }
+
+        #message-display {
+            height: 120px;
+            overflow-y: auto;
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #fdfdfd;
+            font-size: 0.95rem;
+        }
+
+        .input-box {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 0 20px;
+            background: var(--primary-red);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* 하단 장식 */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="diary-page">
+    <div class="header">
+        <h1>2026 丙午年 새해 복 많이 받으세요</h1>
+        <p>끊임없이 도약하고 도전하는 한 해!</p>
+    </div>
+
+    <div class="video-container">
+        <video controls autoplay muted loop>
+            <source src="2026년 병오년 축하 영상.mp4" type="video/mp4">
+            브라우저가 영상을 지원하지 않습니다.
+        </video>
+    </div>
+
+    <div class="photo-section">
+        <span class="horse-anim" style="left: 15%; animation-delay: 0s;">🐎</span>
+        <span class="horse-anim" style="right: 15%; animation-delay: 1.5s;">🐎</span>
+        <span class="horse-anim" style="left: 45%; animation-delay: 0.8s;">🐎</span>
+        
+        <img src="허남식 한복 사진.jpg" alt="메인 이미지" class="main-photo">
+        <p style="margin-top: 15px; font-style: italic;">"새로운 도전을 응원합니다!"</p>
+    </div>
+
+    <div class="guestbook">
+        <h3>방명록</h3>
+        <div id="message-display">
+            <p>✨ 2026년, 붉은 말처럼 기운차게 시작하세요!</p>
+            <p>🧧 소망하시는 모든 일이 이루어지길 기원합니다.</p>
+        </div>
+        <div class="input-box">
+            <input type="text" id="user-msg" placeholder="축하 메시지를 입력하세요...">
+            <button onclick="postMsg()">등록</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 Byung-Oh-Nyeon Celebration Card
+    </div>
+</div>
+
+<script>
+    function postMsg() {
+        const input = document.getElementById('user-msg');
+        const display = document.getElementById('message-display');
+        
+        if (input.value.trim() !== "") {
+            const p = document.createElement('p');
+            p.innerHTML = "🐎 <b>" + input.value + "</b>";
+            display.appendChild(p);
+            input.value = "";
+            display.scrollTop = display.scrollHeight; // 메시지 자동 스크롤
+        }
+    }
+</script>
+
+</body>
+</html>
