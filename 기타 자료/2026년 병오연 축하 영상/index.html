@@ -3,198 +3,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 병오년 새해 축하 다이어리</title>
+    <title>2026 병오년 허남식의 희망 다이어리</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-red: #c62828;
+            --bg-gradient: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); /* 병오년의 불꽃과 희망 */
+            --diary-bg: #fdfbf7;
+            --text-color: #2c3e50;
+            --accent-color: #b21f1f; /* 붉은 말의 색 */
             --gold: #d4af37;
-            --paper: #fffcf5;
         }
 
         body {
-            background-color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-gradient);
+            font-family: 'Noto Serif KR', serif;
+            height: 100vh;
             display: flex;
             justify-content: center;
-            padding: 20px 0;
-            margin: 0;
-            font-family: 'Malgun Gothic', sans-serif;
+            align-items: center;
+            overflow: hidden; /* 스크롤 방지 (다이어리 집중) */
         }
 
-        /* 다이어리 전체 레이아웃 */
-        .diary-page {
-            width: 95%;
-            max-width: 600px;
-            background: var(--paper);
-            border-left: 15px solid var(--primary-red);
-            border-radius: 5px 20px 20px 5px;
-            box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+        /* 🐎 역동적인 말 애니메이션 (화면을 가로질러 도약함) */
+        .horse-anim {
+            position: fixed;
+            bottom: 10%;
+            left: -20%;
+            font-size: 8rem;
+            z-index: 100;
+            animation: gallop 12s linear infinite;
+            filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5));
+            pointer-events: none;
+        }
+
+        @keyframes gallop {
+            0% { left: -20%; transform: rotate(0deg) translateY(0); }
+            30% { transform: rotate(-5deg) translateY(20px); }
+            45% { transform: rotate(-15deg) translateY(-150px) scale(1.1); } /* 도약 */
+            60% { transform: rotate(5deg) translateY(0) scale(1); }
+            100% { left: 120%; transform: rotate(0deg); }
+        }
+
+        /* 🎵 음악 플레이어 버튼 */
+        .music-control {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            cursor: pointer;
+            font-weight: bold;
+            color: var(--text-color);
+            transition: 0.3s;
+        }
+        .music-control:hover { background: var(--gold); color: white; }
+
+        /* 📖 다이어리 컨테이너 */
+        .diary-book {
+            width: 90%;
+            max-width: 1200px;
+            height: 85vh;
+            background-color: var(--diary-bg);
+            border-radius: 15px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+            display: flex;
+            position: relative;
             overflow: hidden;
+        }
+        
+        /* 책 가운데 접힘 효과 */
+        .diary-book::after {
+            content: '';
+            position: absolute;
+            top: 0; bottom: 0; left: 50%;
+            width: 2px;
+            background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0));
+            z-index: 10;
+        }
+
+        /* 왼쪽: 사진 섹션 */
+        .page-left {
+            flex: 1;
+            padding: 40px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            border-right: 1px solid #eee;
         }
 
-        /* 헤더 메시지 영역 */
-        .header {
-            background-color: var(--primary-red);
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-        }
-
-        .header h1 { margin: 0; font-size: 1.8rem; letter-spacing: 3px; }
-        .header p { margin: 10px 0 0; font-size: 1rem; color: var(--gold); font-weight: bold; }
-
-        /* 영상 섹션 */
-        .video-container {
+        .photo-frame {
             width: 100%;
-            background: #000;
-            line-height: 0;
-        }
-
-        video {
-            width: 100%;
-            height: auto;
-            max-height: 60vh; /* 스마트폰 세로 길이에 맞춰 조정 */
-        }
-
-        /* 메인 사진 & 애니메이션 섹션 */
-        .photo-section {
-            padding: 20px;
-            text-align: center;
+            height: 80%;
+            overflow: hidden;
+            border: 8px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             position: relative;
-            background: linear-gradient(to bottom, #fffcf5, #f0ede5);
         }
 
-        .main-photo {
-            width: 80%;
-            max-width: 300px;
-            border: 5px solid white;
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 5s ease;
+        }
+        .photo-frame:hover img { transform: scale(1.05); }
+
+        .photo-caption {
+            margin-top: 20px;
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        /* 오른쪽: 영상 및 방명록 */
+        .page-right {
+            flex: 1;
+            padding: 40px;
+            overflow-y: auto; /* 내용이 많으면 스크롤 */
+            background-image: linear-gradient(#e8e8e8 1px, transparent 1px);
+            background-size: 100% 2rem; /* 노트 줄무늬 효과 */
+        }
+
+        .title-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .title-section h1 {
+            font-size: 2.2rem;
+            margin: 0;
+            color: var(--text-color);
+        }
+        .title-section p {
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* 영상 스타일 */
+        .video-wrapper {
+            width: 100%;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 2;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            background: black;
         }
 
-        /* 도약하는 말 애니메이션 (아이콘) */
-        .horse-anim {
-            position: absolute;
-            font-size: 2.5rem;
-            z-index: 1;
-            animation: jump 3s infinite ease-in-out;
-            opacity: 0.6;
-        }
-
-        @keyframes jump {
-            0% { transform: translateY(0) scale(1); opacity: 0; }
-            50% { transform: translateY(-100px) scale(1.2); opacity: 0.8; }
-            100% { transform: translateY(-150px) scale(1.5); opacity: 0; }
-        }
-
-        /* 방명록 섹션 */
-        .guestbook {
+        /* 방명록 스타일 */
+        .guestbook-section {
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            background: white;
-            border-top: 2px dashed var(--primary-red);
+            border-radius: 10px;
+            border: 1px solid #ddd;
         }
-
-        .guestbook h3 { color: var(--primary-red); margin-top: 0; border-bottom: 2px solid var(--gold); display: inline-block; }
-
-        #message-display {
-            height: 120px;
-            overflow-y: auto;
-            border: 1px solid #eee;
-            padding: 10px;
-            margin-bottom: 10px;
-            background: #fdfdfd;
-            font-size: 0.95rem;
-        }
-
-        .input-box {
+        
+        .guestbook-form {
             display: flex;
             gap: 10px;
+            margin-bottom: 20px;
         }
-
-        input {
+        
+        .guestbook-input {
             flex: 1;
-            padding: 12px;
+            padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 5px;
+            font-family: 'Noto Serif KR', serif;
         }
-
-        button {
-            padding: 0 20px;
-            background: var(--primary-red);
+        
+        .guestbook-btn {
+            padding: 10px 20px;
+            background: var(--accent-color);
             color: white;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
             cursor: pointer;
             font-weight: bold;
         }
 
-        /* 하단 장식 */
-        .footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 0.8rem;
-            color: #888;
+        .guestbook-list {
+            list-style: none;
+            padding: 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .guestbook-item {
+            padding: 10px;
+            border-bottom: 1px dashed #ccc;
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .guestbook-date { font-size: 0.8rem; color: #888; }
+
+        /* 모바일 반응형 */
+        @media (max-width: 768px) {
+            .diary-book { flex-direction: column; height: auto; overflow: visible; }
+            .page-left { height: 400px; }
+            .diary-book::after { display: none; }
         }
     </style>
 </head>
 <body>
 
-<div class="diary-page">
-    <div class="header">
-        <h1>2026 丙午年 새해 복 많이 받으세요</h1>
-        <p>끊임없이 도약하고 도전하는 한 해!</p>
-    </div>
+    <div class="horse-anim">🐎</div>
 
-    <div class="video-container">
-        <video controls autoplay muted loop>
-            <source src="2026년 병오년 축하 영상.mp4" type="video/mp4">
-            브라우저가 영상을 지원하지 않습니다.
-        </video>
-    </div>
+    <audio id="bgm" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
+        </audio>
+    <div class="music-control" onclick="toggleMusic()">🎵 BGM ON/OFF</div>
 
-    <div class="photo-section">
-        <span class="horse-anim" style="left: 15%; animation-delay: 0s;">🐎</span>
-        <span class="horse-anim" style="right: 15%; animation-delay: 1.5s;">🐎</span>
-        <span class="horse-anim" style="left: 45%; animation-delay: 0.8s;">🐎</span>
-        
-        <img src="허남식 한복 사진.jpg" alt="메인 이미지" class="main-photo">
-        <p style="margin-top: 15px; font-style: italic;">"새로운 도전을 응원합니다!"</p>
-    </div>
-
-    <div class="guestbook">
-        <h3>방명록</h3>
-        <div id="message-display">
-            <p>✨ 2026년, 붉은 말처럼 기운차게 시작하세요!</p>
-            <p>🧧 소망하시는 모든 일이 이루어지길 기원합니다.</p>
+    <div class="diary-book">
+        <div class="page-left">
+            <div class="photo-frame">
+                <img src="허남식 한복 사진.jpg" alt="허남식 한복 사진">
+            </div>
+            <div class="photo-caption">Happy New Year 2026</div>
+            <p style="text-align: center; margin-top: 10px; color: #555;">
+                "멈추지 않으면 결국 도착합니다.<br>거북이처럼, 오뚝이처럼."
+            </p>
         </div>
-        <div class="input-box">
-            <input type="text" id="user-msg" placeholder="축하 메시지를 입력하세요...">
-            <button onclick="postMsg()">등록</button>
+
+        <div class="page-right">
+            <div class="title-section">
+                <h1>2026 병오년(丙午年)</h1>
+                <p>AI Life Architect 허남식이 전하는 희망 메시지</p>
+            </div>
+
+            <div class="video-wrapper">
+                <video width="100%" controls poster="허남식 한복 사진.jpg">
+                    <source src="2026년 새해 인사말 허남식.mp4" type="video/mp4">
+                    브라우저가 영상을 지원하지 않습니다.
+                </video>
+            </div>
+
+            <div class="guestbook-section">
+                <h3 style="margin-top: 0; color: var(--accent-color);">✍️ 희망 방명록</h3>
+                <p style="font-size: 0.9rem; color: #666;">여러분의 새해 다짐과 축하 메시지를 남겨주세요.</p>
+                
+                <div class="guestbook-form">
+                    <input type="text" id="guestName" placeholder="이름" style="width: 20%;" class="guestbook-input">
+                    <input type="text" id="guestMsg" placeholder="모두에게 전할 메시지..." class="guestbook-input">
+                    <button class="guestbook-btn" onclick="addMessage()">등록</button>
+                </div>
+
+                <ul id="msgList" class="guestbook-list">
+                    </ul>
+            </div>
         </div>
     </div>
 
-    <div class="footer">
-        © 2026 Byung-Oh-Nyeon Celebration Card
-    </div>
-</div>
+    <script>
+        // 1. 음악 재생 제어
+        const audio = document.getElementById('bgm');
+        let isPlaying = false;
 
-<script>
-    function postMsg() {
-        const input = document.getElementById('user-msg');
-        const display = document.getElementById('message-display');
-        
-        if (input.value.trim() !== "") {
-            const p = document.createElement('p');
-            p.innerHTML = "🐎 <b>" + input.value + "</b>";
-            display.appendChild(p);
-            input.value = "";
-            display.scrollTop = display.scrollHeight; // 메시지 자동 스크롤
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+                document.querySelector('.music-control').innerText = "🎵 BGM START";
+            } else {
+                audio.play();
+                document.querySelector('.music-control').innerText = "⏸ BGM PAUSE";
+            }
+            isPlaying = !isPlaying;
         }
-    }
-</script>
 
+        // 2. 방명록 기능 (Local Storage 활용)
+        const msgList = document.getElementById('msgList');
+
+        // 저장된 메시지 불러오기
+        function loadMessages() {
+            const messages = JSON.parse(localStorage.getItem('diaryMessages')) || [];
+            msgList.innerHTML = ''; // 초기화
+            messages.forEach(msg => createListElement(msg.name, msg.text, msg.date));
+        }
+
+        // 화면에 리스트 추가하는 함수
+        function createListElement(name, text, date) {
+            const li = document.createElement('li');
+            li.className = 'guestbook-item';
+            li.innerHTML = `
+                <span><strong>${name}</strong>: ${text}</span>
+                <span class="guestbook-date">${date}</span>
+            `;
+            // 최신 글이 위로 오게
+            msgList.insertBefore(li, msgList.firstChild);
+        }
+
+        // 메시지 등록 함수
+        function addMessage() {
+            const nameInput = document.getElementById('guestName');
+            const msgInput = document.getElementById('guestMsg');
+            
+            const name = nameInput.value.trim();
+            const text = msgInput.value.trim();
+
+            if (!name || !text) {
+                alert("이름과 메시지를 모두 입력해주세요.");
+                return;
+            }
+
+            const now = new Date();
+            const dateStr = `${now.getFullYear()}.${now.getMonth()+1}.${now.getDate()}`;
+
+            // 화면에 추가
+            createListElement(name, text, dateStr);
+
+            // 로컬 저장소에 저장 (새로고침 해도 유지됨)
+            const messages = JSON.parse(localStorage.getItem('diaryMessages')) || [];
+            messages.push({ name, text, date: dateStr });
+            localStorage.setItem('diaryMessages', JSON.stringify(messages));
+
+            // 입력창 비우기
+            nameInput.value = '';
+            msgInput.value = '';
+        }
+
+        // 페이지 로드 시 메시지 불러오기
+        window.onload = loadMessages;
+    </script>
 </body>
 </html>
